@@ -22,7 +22,7 @@ body {
     left: calc(50% - 1.5vmin);
     transform-origin: bottom center;
     z-index: 10;
-    animation: minute 600s steps(60) infinite;
+    animation: minute 3600s steps(60) infinite;
 
     @keyframes minute {
       0% {
@@ -43,7 +43,7 @@ body {
     left: calc(50% - 0.5vmin);
     transform-origin: bottom center;
     z-index: 1;
-    animation: second 10s linear infinite;
+    animation: second 60s linear infinite;
 
     @keyframes second {
       0% {
@@ -66,4 +66,14 @@ body {
     transform: translate(-50%, -50%);
     z-index: 200;
   }
+
+  &--speed-up {
+  .stopwatch-secundomer {
+    animation-duration: 10s;
+  }
+
+  .stopwatch-minute {
+    animation-duration: 600s;
+  }
+}
 }
