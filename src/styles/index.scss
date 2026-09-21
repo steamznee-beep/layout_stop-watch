@@ -67,13 +67,12 @@ body {
     z-index: 200;
   }
 
-  &--speed-up {
-  .stopwatch-secundomer {
-    animation-duration: 10s;
+ &--speed-up {
+    .stopwatch-secundomer {
+      animation-duration: 10s;
+    }
+    .stopwatch-minute {
+      animation-duration: 600s;
+    }
   }
-
-  .stopwatch-minute {
-    animation-duration: 600s;
-  }
-}
 }
